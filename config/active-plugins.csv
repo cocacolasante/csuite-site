@@ -1,0 +1,11 @@
+name,status,update,version,update_version,auto_update
+fluent-crm,active,available,2.9.65,3.0.2,off
+fluentform,active,available,6.0.4,6.2.2,off
+fluent-smtp,active,available,2.2.90,2.2.95,off
+kadence-blocks,active,available,3.5.18,3.7.2,off
+seo-by-rank-math,active,available,1.0.269,1.0.270,off
+google-site-kit,active,available,1.160.0,1.178.0,off
+kadence-starter-templates,active,available,2.2.13,2.3.0,off
+woocommerce,active,available,10.2.4,10.7.0,off
+csuite-schema,must-use,,1.1.0,,off
+csuite-style-polish,must-use,,1.0.0,,off

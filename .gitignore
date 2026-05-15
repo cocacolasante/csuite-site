@@ -1,0 +1,28 @@
+# Never commit live secrets
+wp-config.php
+*.env
+*.env.local
+secrets/
+*.key
+*.pem
+id_rsa*
+
+# Logs and runtime
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Uploads handled separately
+uploads/
+
+# WP cache and transient state
+wp-content/cache/
+wp-content/upgrade/
+
+# Local nightly DB dumps live in /var/backups/wordpress/, not in repo
+/var/backups/
+
+# OS junk
+Thumbs.db
+.DS_Store

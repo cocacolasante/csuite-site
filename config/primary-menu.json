@@ -1,0 +1,58 @@
+[
+    {
+        "db_id": 63,
+        "type": "post_type",
+        "title": "Home",
+        "link": "http://csuitecode.com/",
+        "position": 1
+    },
+    {
+        "db_id": 173,
+        "type": "post_type",
+        "title": "AI for Your Business",
+        "link": "http://csuitecode.com/ai/",
+        "position": 2
+    },
+    {
+        "db_id": 64,
+        "type": "post_type",
+        "title": "About",
+        "link": "http://csuitecode.com/about/",
+        "position": 3
+    },
+    {
+        "db_id": 199,
+        "type": "post_type",
+        "title": "Cloud Solutions",
+        "link": "http://csuitecode.com/managed-cloud/",
+        "position": 4
+    },
+    {
+        "db_id": 289,
+        "type": "post_type",
+        "title": "Nonprofits",
+        "link": "http://csuitecode.com/nonprofits/",
+        "position": 5
+    },
+    {
+        "db_id": 187,
+        "type": "post_type",
+        "title": "Services",
+        "link": "http://csuitecode.com/services/",
+        "position": 6
+    },
+    {
+        "db_id": 66,
+        "type": "post_type",
+        "title": "Pricing",
+        "link": "http://csuitecode.com/pricing/",
+        "position": 7
+    },
+    {
+        "db_id": 65,
+        "type": "post_type",
+        "title": "Contact",
+        "link": "http://csuitecode.com/contact/",
+        "position": 8
+    }
+]
