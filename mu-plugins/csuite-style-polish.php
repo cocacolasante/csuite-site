@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: CSuite Code Design System
- * Description: Linear/Vercel-inspired design system — dark hero, light body, gradient accents, conversion-focused components.
+ * Description: Linear/Vercel-inspired design system - dark hero, light body, gradient accents, conversion-focused components.
  * Version: 2.0.0
  * Author: CSuite Code
  */
@@ -21,26 +21,26 @@ add_action( 'wp_head', function () {
 	?>
 <style id="csuite-design-system">
 :root {
-	--c-bg:        #ffffff;
-	--c-bg-alt:    #f7f8fa;
-	--c-bg-soft:   #f0f2f5;
-	--c-fg:        #0a0e1a;
-	--c-fg-2:      #1f2937;
-	--c-fg-muted:  #4b5563;
-	--c-fg-dim:    #6b7280;
-	--c-border:    #e5e7eb;
-	--c-border-2:  #d1d5db;
+	--c-bg: #ffffff;
+	--c-bg-alt: #f7f8fa;
+	--c-bg-soft: #f0f2f5;
+	--c-fg: #0a0e1a;
+	--c-fg-2: #1f2937;
+	--c-fg-muted: #4b5563;
+	--c-fg-dim: #6b7280;
+	--c-border: #e5e7eb;
+	--c-border-2: #d1d5db;
 
-	--c-dark:        #0a0e1a;
-	--c-dark-2:      #111827;
-	--c-dark-3:      #1f2937;
-	--c-dark-text:   #f9fafb;
-	--c-dark-muted:  #9ca3af;
+	--c-dark: #0a0e1a;
+	--c-dark-2: #111827;
+	--c-dark-3: #1f2937;
+	--c-dark-text: #f9fafb;
+	--c-dark-muted: #9ca3af;
 	--c-dark-border: rgba(255,255,255,0.08);
 
-	--c-accent:    #2563eb;
-	--c-accent-2:  #7c3aed;
-	--c-accent-3:  #06b6d4;
+	--c-accent: #2563eb;
+	--c-accent-2: #7c3aed;
+	--c-accent-3: #06b6d4;
 	--c-accent-glow: rgba(37, 99, 235, 0.32);
 
 	--c-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
@@ -50,12 +50,12 @@ add_action( 'wp_head', function () {
 	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
 	--radius-sm: 6px;
-	--radius:    10px;
+	--radius: 10px;
 	--radius-lg: 16px;
 	--radius-xl: 24px;
 
 	--shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-	--shadow:    0 4px 16px -8px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.06);
+	--shadow: 0 4px 16px -8px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.06);
 	--shadow-lg: 0 20px 50px -20px rgba(15, 23, 42, 0.18), 0 8px 20px -12px rgba(15, 23, 42, 0.10);
 	--shadow-accent: 0 12px 40px -16px var(--c-accent-glow);
 
@@ -81,7 +81,7 @@ body {
 	line-height: 1.15;
 }
 
-/* === Page header tweak — make site nav look more "Linear" === */
+/* === Page header tweak - make site nav look more "Linear" === */
 .site-main-header-wrap, .site-header-wrap {
 	border-bottom: 1px solid var(--c-border);
 	background: rgba(255,255,255,0.85) !important;
@@ -693,7 +693,7 @@ body {
 
 /**
  * Render a global "Book a Call" sticky bar at the bottom of every front-end page
- * (mobile only — desktop uses header CTA).
+ * (mobile only - desktop uses header CTA).
  */
 add_action( 'wp_footer', function () {
 	if ( is_admin() ) return;
