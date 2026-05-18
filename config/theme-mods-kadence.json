@@ -950,8 +950,8 @@
         "flag": true
     },
     "initial_version": "1.2.4",
-    "header_button_label": "Get Started",
-    "header_button_link": "https://csuitecode.com/pricing/",
+    "header_button_label": "Book a Call",
+    "header_button_link": "https://calendar.app.google/jSHYj7c6WtJGykGQ7",
     "header_button_shadow_hover": {
         "color": "rgba(0,0,0,0)",
         "hOffset": 0,
