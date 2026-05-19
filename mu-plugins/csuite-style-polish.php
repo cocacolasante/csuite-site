@@ -8,14 +8,25 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-// Load Inter from Google Fonts
+// Load Inter from Google Fonts with preload, preconnect, and display=swap
+// for fast LCP and zero invisible-text flash.
 add_action( 'wp_head', function () {
 	?>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
 	<?php
 }, 5 );
+
+// Image loading hints across the site: lazy + async-decode by default,
+// and let the first hero image upgrade to fetchpriority=high (LCP candidate).
+add_filter( 'wp_get_attachment_image_attributes', function( $attrs ) {
+	if ( ! isset( $attrs['loading'] ) ) $attrs['loading'] = 'lazy';
+	if ( ! isset( $attrs['decoding'] ) ) $attrs['decoding'] = 'async';
+	return $attrs;
+} );
 
 add_action( 'wp_head', function () {
 	?>

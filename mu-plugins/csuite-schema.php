@@ -352,24 +352,63 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
  */
 function csuite_howto_for_page( $post_id ) {
 	$howtos = [
-		// Nonprofits engagement process
+		// Home engagement process
+		57 => [
+			'name' => 'How to start a technology engagement with CSuite Code',
+			'description' => 'Three steps from a free discovery call to a working tech setup tailored for your small business or nonprofit.',
+			'totalTime' => 'P14D',
+			'steps' => [
+				[ 'name' => 'Discovery Call', 'text' => 'Tell us about your mission, your tools, and where things break down. 30 minutes, no pitch deck.' ],
+				[ 'name' => 'Tailored Roadmap', 'text' => 'We map priorities and send a transparent quote. No surprises, no enterprise upsell.' ],
+				[ 'name' => 'Build, Train, Stick Around', 'text' => 'We implement, train your team, and stay on as a fractional tech partner.' ],
+			],
+		],
+
+		// Services hub process
+		59 => [
+			'name' => 'How an engagement with CSuite Code starts',
+			'description' => 'Three steps from first contact to an active fractional tech partnership.',
+			'totalTime' => 'P14D',
+			'steps' => [
+				[ 'name' => 'Discovery Call', 'text' => 'Tell us about your tools, your team, and where things break down. 30 minutes, no pitch deck.' ],
+				[ 'name' => 'Tailored Roadmap', 'text' => 'We map priorities and send a transparent quote. No surprises, no enterprise upsell.' ],
+				[ 'name' => 'Build, Train, Stick Around', 'text' => 'We implement, train your team, and stay on as a fractional tech partner.' ],
+			],
+		],
+
+		// AI Integration process
+		162 => [
+			'name' => 'How to ship your first AI win in four weeks',
+			'description' => 'Three steps from workflow audit to shipped AI automation for a small business.',
+			'totalTime' => 'P28D',
+			'steps' => [
+				[ 'name' => 'Workflow Audit', 'text' => '30-minute call to find the repetitive work your team spends the most time on.' ],
+				[ 'name' => 'Pick One & Build', 'text' => 'We pick a single high-leverage automation, build it, test it, and ship it.' ],
+				[ 'name' => 'Expand', 'text' => 'Once the first win is in production, we plan the next one. AI infrastructure folds into a monthly care package.' ],
+			],
+		],
+
+		// Contact / what happens next
+		60 => [
+			'name' => 'What happens after you book a discovery call with CSuite Code',
+			'description' => 'Three steps that follow a successful discovery-call booking.',
+			'totalTime' => 'P2D',
+			'steps' => [
+				[ 'name' => 'Confirmation', 'text' => 'You receive a calendar invite with a Google Meet link, plus a short questionnaire so we come prepared.' ],
+				[ 'name' => 'The Call', 'text' => 'Bring your questions. We review your stack, your goals, and identify your biggest tech opportunities.' ],
+				[ 'name' => 'Tailored Quote', 'text' => 'Within 48 hours we send a written roadmap and quote. No surprises, no high-pressure pitches.' ],
+			],
+		],
+
+		// Nonprofits engagement process (unchanged)
 		288 => [
 			'name' => 'How to start a nonprofit technology engagement with CSuite Code',
 			'description' => 'Three steps from a free discovery call to an active partnership, including setup of your complimentary GrantMind Pro account.',
 			'totalTime' => 'P14D',
 			'steps' => [
-				[
-					'name' => 'Discovery Call',
-					'text' => 'Schedule a free 30-minute discovery call. We learn about your mission, your team, your current tools, and where things break down. No pitch deck.',
-				],
-				[
-					'name' => 'Tailored Tech Roadmap',
-					'text' => 'We map out priorities, set up your GrantMind Pro account, and send you a transparent quote - no surprises and no enterprise upsell.',
-				],
-				[
-					'name' => 'Build, Train, and Stick Around',
-					'text' => 'We implement the work, train your team, and stay on as a fractional tech partner - there when grant cycles, audits, or growth call for backup.',
-				],
+				[ 'name' => 'Discovery Call', 'text' => 'Schedule a free 30-minute discovery call. We learn about your mission, your team, your current tools, and where things break down. No pitch deck.' ],
+				[ 'name' => 'Tailored Tech Roadmap', 'text' => 'We map out priorities, set up your GrantMind Pro account, and send you a transparent quote - no surprises and no enterprise upsell.' ],
+				[ 'name' => 'Build, Train, and Stick Around', 'text' => 'We implement the work, train your team, and stay on as a fractional tech partner - there when grant cycles, audits, or growth call for backup.' ],
 			],
 		],
 	];
