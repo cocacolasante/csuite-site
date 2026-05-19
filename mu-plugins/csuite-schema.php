@@ -81,6 +81,48 @@ function csuite_faqs_for_page( $post_id ) {
 			[ 'q' => 'How do you verify 501(c)(3) status to qualify for the discount?',
 			 'a' => 'We ask for your IRS determination letter or your EIN to confirm 501(c)(3) status. Once verified, the discount applies to all engagements.' ],
 		],
+
+		// Philadelphia nonprofits (339)
+		339 => [
+			[ 'q' => 'Are you actually based in Philadelphia?',
+			 'a' => 'Yes. CSuite Code is based in the Greater Philadelphia region. We work with nonprofits across Philadelphia, Bucks, Chester, Delaware, and Montgomery counties — as well as South Jersey clients within driving distance.' ],
+			[ 'q' => 'Do you work with Philadelphia nonprofits in person?',
+			 'a' => 'Many engagements start with an in-person kickoff in Center City or wherever your office is. Day-to-day work is remote (faster and cheaper for you), but we drive over for board presentations, training sessions, and event support when it matters.' ],
+			[ 'q' => 'What kinds of Philadelphia nonprofits do you typically work with?',
+			 'a' => 'Education-focused nonprofits, community-based social services orgs, arts and cultural institutions, charter schools, mentoring programs, and small foundations. Anywhere from West Philly to the Main Line, Camden to Cherry Hill.' ],
+			[ 'q' => 'Do you know Philadelphia-specific funders and grant calendars?',
+			 'a' => 'Yes. GrantMind Pro (included with your engagement) covers the William Penn Foundation, Pew Charitable Trusts, the Independence Public Media Foundation, the Philadelphia Foundation, and dozens of other regional funders — plus state grants through Pennsylvania DCED and federal opportunities.' ],
+			[ 'q' => 'How do I verify my Philadelphia nonprofit qualifies for the discount?',
+			 'a' => 'Send us your IRS determination letter or EIN. Once we confirm 501(c)(3) status, the discount applies to all engagements. Smaller orgs (under $500K annual budget) qualify for our deepest tier.' ],
+		],
+
+		// Pennsylvania nonprofits (340)
+		340 => [
+			[ 'q' => 'Do you serve nonprofits across all of Pennsylvania?',
+			 'a' => 'Yes. We work with 501(c)(3) organizations statewide — Greater Philadelphia, the Lehigh Valley, Central PA, Pittsburgh, Erie, and the rural regions in between. Most engagements are remote-first; we travel for kickoff meetings and major milestones.' ],
+			[ 'q' => 'Are you familiar with Pennsylvania state grant programs?',
+			 'a' => 'GrantMind Pro tracks Pennsylvania DCED grants, the Pennsylvania Council on the Arts, the Department of Human Services contracting opportunities, and regional community foundations from the Heinz Endowments in Pittsburgh to the Lehigh Valley Community Foundation. It is included free during your engagement.' ],
+			[ 'q' => 'Can you serve nonprofits in Pittsburgh, even though you are in Philadelphia?',
+			 'a' => 'Yes. We work remotely with clients in Pittsburgh, Erie, and Western PA. Modern collaboration tools make 300 miles a non-issue for day-to-day work; we travel for important milestones if needed.' ],
+			[ 'q' => 'What types of Pennsylvania nonprofits do you typically work with?',
+			 'a' => 'Education, healthcare, social services, arts and culture, immigrant services, environmental, and community development organizations. We are sized for orgs with under-$5M budgets and lean staffs.' ],
+			[ 'q' => 'How do you verify Pennsylvania nonprofit status?',
+			 'a' => 'Send your IRS determination letter or EIN. Once we confirm 501(c)(3) status, the discount applies to all engagements. Smaller orgs (under $500K annual budget) qualify for our deepest tier.' ],
+		],
+
+		// New Jersey nonprofits (341)
+		341 => [
+			[ 'q' => 'Do you serve nonprofits across New Jersey?',
+			 'a' => 'Yes. We work with 501(c)(3) organizations throughout New Jersey — South Jersey (Camden, Cherry Hill, Vineland, Atlantic City), Central Jersey (Trenton, Princeton, New Brunswick), and North Jersey (Newark, Jersey City, Hoboken).' ],
+			[ 'q' => 'Are you familiar with New Jersey state grant programs?',
+			 'a' => 'GrantMind Pro tracks NJEDA, the New Jersey State Council on the Arts, the Department of Human Services, regional community foundations, and the major private funders including the Robert Wood Johnson Foundation, Geraldine R. Dodge Foundation, and Prudential Foundation. Included free during your engagement.' ],
+			[ 'q' => 'How does a Philadelphia-based team serve New Jersey nonprofits?',
+			 'a' => 'We are based in the Greater Philadelphia region, just across the Delaware. We drive over to South Jersey for kickoffs, board presentations, and event support. North Jersey and the Shore are served remotely — we work with most clients via video and async messaging, which keeps costs low.' ],
+			[ 'q' => 'What types of New Jersey nonprofits do you typically work with?',
+			 'a' => 'Youth services, food security, arts and culture, faith-based, healthcare, environmental, and community development organizations. We are sized for orgs with under-$5M budgets and lean staffs.' ],
+			[ 'q' => 'How do you verify New Jersey nonprofit status?',
+			 'a' => 'Send your IRS determination letter or EIN. Once we confirm 501(c)(3) status, the discount applies to all engagements. Smaller orgs (under $500K annual budget) qualify for our deepest tier.' ],
+		],
 	];
 
 	$post_id = (int) $post_id;
@@ -139,6 +181,33 @@ function csuite_related_links_for_page( $post_id ) {
 			'links' => [
 				[ 'url' => '/nonprofits/', 'label' => 'For nonprofits', 'desc' => 'Discounted rates and complimentary GrantMind Pro access.' ],
 				[ 'url' => '/services-ai-automation/', 'label' => 'For home service businesses', 'desc' => 'AI automation built for HVAC, plumbing, and cleaning teams.' ],
+			],
+		],
+		// Philadelphia nonprofits (339)
+		339 => [
+			'heading' => 'Also serving',
+			'links' => [
+				[ 'url' => '/nonprofits-pennsylvania/', 'label' => 'Pennsylvania nonprofits', 'desc' => 'Statewide coverage across PA - from the Lehigh Valley to Pittsburgh.' ],
+				[ 'url' => '/nonprofits-new-jersey/', 'label' => 'New Jersey nonprofits', 'desc' => 'South Jersey and beyond - just across the Delaware.' ],
+				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit services overview', 'desc' => 'The full breakdown of what we do for nonprofits.' ],
+			],
+		],
+		// Pennsylvania nonprofits (340)
+		340 => [
+			'heading' => 'Also serving',
+			'links' => [
+				[ 'url' => '/nonprofits-philadelphia/', 'label' => 'Philadelphia nonprofits', 'desc' => 'Local hands-on partnership for Greater Philly orgs.' ],
+				[ 'url' => '/nonprofits-new-jersey/', 'label' => 'New Jersey nonprofits', 'desc' => 'Just across the Delaware. South, Central, and North Jersey.' ],
+				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit services overview', 'desc' => 'The full breakdown of what we do for nonprofits.' ],
+			],
+		],
+		// New Jersey nonprofits (341)
+		341 => [
+			'heading' => 'Also serving',
+			'links' => [
+				[ 'url' => '/nonprofits-philadelphia/', 'label' => 'Philadelphia nonprofits', 'desc' => 'Across the Delaware. Local hands-on partnership in PHL.' ],
+				[ 'url' => '/nonprofits-pennsylvania/', 'label' => 'Pennsylvania nonprofits', 'desc' => 'Statewide coverage across the commonwealth.' ],
+				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit services overview', 'desc' => 'The full breakdown of what we do for nonprofits.' ],
 			],
 		],
 	];
@@ -272,21 +341,50 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 	foreach ( $data as $key => $node ) {
 		if ( ! is_array( $node ) || empty( $node['@type'] ) ) continue;
 
-		// Enrich the Organization
+		// Enrich the Organization → upgrade to ProfessionalService (a LocalBusiness type)
 		if ( $node['@type'] === 'Organization' && ( $node['@id'] ?? '' ) === CSUITE_ORG_ID ) {
+			$node['@type'] = [ 'Organization', 'ProfessionalService', 'LocalBusiness' ];
 			$node['url'] = 'https://csuitecode.com';
 			$node['email'] = 'Info@csuitecode.com';
-			$node['description'] = 'CSuite Code is a technology consulting firm helping small and medium-sized businesses and nonprofits with websites, IT support, AI automation, managed cloud, and fractional CTO services.';
+			$node['description'] = 'CSuite Code is a Philadelphia-based technology consulting firm helping nonprofits and small businesses across Pennsylvania and New Jersey with websites, IT support, AI automation, managed cloud, and fractional CTO services.';
 			$node['sameAs'] = [ CSUITE_LINKEDIN ];
-			$node['areaServed'] = [ '@type' => 'Country', 'name' => 'United States' ];
+			$node['address'] = [
+				'@type' => 'PostalAddress',
+				'addressLocality' => 'Philadelphia',
+				'addressRegion' => 'PA',
+				'addressCountry' => 'US',
+			];
+			$node['geo'] = [
+				'@type' => 'GeoCoordinates',
+				'latitude' => 39.9526,
+				'longitude' => -75.1652,
+			];
+			$node['areaServed'] = [
+				[ '@type' => 'City', 'name' => 'Philadelphia' ],
+				[ '@type' => 'State', 'name' => 'Pennsylvania' ],
+				[ '@type' => 'State', 'name' => 'New Jersey' ],
+				[ '@type' => 'AdministrativeArea', 'name' => 'Greater Philadelphia Region' ],
+				[ '@type' => 'Country', 'name' => 'United States' ],
+			];
+			$node['serviceArea'] = [
+				'@type' => 'GeoCircle',
+				'geoMidpoint' => [
+					'@type' => 'GeoCoordinates',
+					'latitude' => 39.9526,
+					'longitude' => -75.1652,
+				],
+				'geoRadius' => '150000',
+			];
 			$node['knowsAbout'] = [
-				'IT consulting',
+				'Nonprofit technology consulting',
+				'IT consulting for nonprofits in Philadelphia',
+				'Technology services for Pennsylvania nonprofits',
+				'Technology services for New Jersey nonprofits',
 				'Web development',
 				'Managed cloud services',
 				'AI integration for small business',
 				'Cloud migration',
 				'Fractional CTO services',
-				'Nonprofit technology',
 				'Grant writing software',
 			];
 			$node['knowsLanguage'] = 'en-US';
@@ -294,7 +392,7 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 				'@type' => 'ContactPoint',
 				'contactType' => 'customer support',
 				'email' => 'Info@csuitecode.com',
-				'areaServed' => 'US',
+				'areaServed' => [ 'US-PA', 'US-NJ' ],
 				'availableLanguage' => 'en',
 			];
 			$node['founder'] = [ '@id' => 'https://csuitecode.com/#founder' ];
@@ -493,6 +591,58 @@ function csuite_service_for_page( $post_id ) {
 	];
 
 	switch ( (int) $post_id ) {
+		case 339: // Philadelphia nonprofits
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofits-philadelphia/#service',
+				'name' => 'Technology Services for Philadelphia Nonprofits',
+				'serviceType' => 'Nonprofit Technology Consulting',
+				'description' => 'Philadelphia-based fractional tech team for 501(c)(3) organizations across the city and Greater Philadelphia region. Discounted rates, GrantMind Pro AI grant platform included.',
+				'url' => 'https://csuitecode.com/nonprofits-philadelphia/',
+				'areaServed' => [
+					[ '@type' => 'City', 'name' => 'Philadelphia', 'containedInPlace' => [ '@type' => 'State', 'name' => 'Pennsylvania' ] ],
+					[ '@type' => 'AdministrativeArea', 'name' => 'Greater Philadelphia' ],
+				],
+				'audience' => [
+					'@type' => 'Audience',
+					'audienceType' => 'Philadelphia nonprofit organizations (501(c)(3))',
+					'geographicArea' => [ '@type' => 'City', 'name' => 'Philadelphia' ],
+				],
+			] );
+
+		case 340: // Pennsylvania nonprofits
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofits-pennsylvania/#service',
+				'name' => 'Technology Services for Pennsylvania Nonprofits',
+				'serviceType' => 'Nonprofit Technology Consulting',
+				'description' => 'Statewide technology services for Pennsylvania 501(c)(3) organizations - from Greater Philadelphia to Pittsburgh, the Lehigh Valley to Erie. Discounted rates and complimentary GrantMind Pro access.',
+				'url' => 'https://csuitecode.com/nonprofits-pennsylvania/',
+				'areaServed' => [
+					[ '@type' => 'State', 'name' => 'Pennsylvania' ],
+				],
+				'audience' => [
+					'@type' => 'Audience',
+					'audienceType' => 'Pennsylvania nonprofit organizations (501(c)(3))',
+					'geographicArea' => [ '@type' => 'State', 'name' => 'Pennsylvania' ],
+				],
+			] );
+
+		case 341: // New Jersey nonprofits
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofits-new-jersey/#service',
+				'name' => 'Technology Services for New Jersey Nonprofits',
+				'serviceType' => 'Nonprofit Technology Consulting',
+				'description' => 'Statewide technology services for New Jersey 501(c)(3) organizations from a Philadelphia-area team. Camden, Cherry Hill, Trenton, Princeton, Newark, Jersey City, and the Shore. Discounted rates and free GrantMind Pro access.',
+				'url' => 'https://csuitecode.com/nonprofits-new-jersey/',
+				'areaServed' => [
+					[ '@type' => 'State', 'name' => 'New Jersey' ],
+				],
+				'audience' => [
+					'@type' => 'Audience',
+					'audienceType' => 'New Jersey nonprofit organizations (501(c)(3))',
+					'geographicArea' => [ '@type' => 'State', 'name' => 'New Jersey' ],
+				],
+			] );
+
 		case 288: // Nonprofits
 			return array_merge( $base, [
 				'@id' => 'https://csuitecode.com/nonprofits/#service',
