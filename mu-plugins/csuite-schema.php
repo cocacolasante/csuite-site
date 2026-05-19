@@ -123,6 +123,98 @@ function csuite_faqs_for_page( $post_id ) {
 			[ 'q' => 'How do you verify New Jersey nonprofit status?',
 			 'a' => 'Send your IRS determination letter or EIN. Once we confirm 501(c)(3) status, the discount applies to all engagements. Smaller orgs (under $500K annual budget) qualify for our deepest tier.' ],
 		],
+
+		// Nonprofit IT Support (346)
+		346 => [
+			[ 'q' => 'What is nonprofit IT support, exactly?',
+			 'a' => 'Nonprofit IT support is the day-to-day work of keeping your technology running: helpdesk for staff laptops and email, security patching, backup and recovery, monitoring, and answering questions when something breaks. CSuite Code provides discounted IT support for verified 501(c)(3) organizations.' ],
+			[ 'q' => 'How much does nonprofit IT support cost?',
+			 'a' => 'A reasonable benchmark is 2-5% of annual operating budget for total IT spend. For a $500,000-budget nonprofit, that means roughly $10,000-$25,000 per year on technology including software and external support. Nonprofit-priced managed plans typically run $1,500-$2,500 per month and bundle most of what you need.' ],
+			[ 'q' => 'What is the difference between nonprofit IT support and a managed service provider (MSP)?',
+			 'a' => 'IT support is operational - keeping things running and fixing things that break. A managed service provider (MSP) bundles IT support with strategic planning, vendor management, security monitoring, and ongoing improvements under a single predictable monthly fee. See our nonprofit managed services page for a full comparison.' ],
+			[ 'q' => 'Do you only support nonprofits in Philadelphia?',
+			 'a' => 'No. We are based in the Greater Philadelphia region but work remotely with nonprofits across Pennsylvania, New Jersey, and the broader United States. We travel to local clients for kickoffs and major milestones; remote-only engagements work fine for the rest of the country.' ],
+			[ 'q' => 'What if my nonprofit already has someone doing IT?',
+			 'a' => 'Many of our clients have an internal IT person or volunteer. We slot in alongside them - handling the things they do not have time for, providing CTO-level guidance, or being the backup when they are on vacation. We do not require you to replace anyone.' ],
+		],
+
+		// Nonprofit Managed Services / MSP (347)
+		347 => [
+			[ 'q' => 'What is a nonprofit MSP (managed service provider)?',
+			 'a' => 'A nonprofit MSP is a single technology partner that handles your full IT stack - hosting, security, monitoring, helpdesk, software updates, backups, and strategic guidance - for a predictable monthly fee. Instead of juggling a hosting bill, a security tool, a CRM admin, and a part-time IT helper, you get all of it under one engagement.' ],
+			[ 'q' => 'How is a nonprofit MSP different from hourly IT support?',
+			 'a' => 'Hourly IT support is reactive: you pay when something breaks. A managed service provider is proactive: monitoring, patching, and backups happen continuously, so things rarely break. For nonprofits with daily technology needs (donor portals, email, event registration) the managed model is almost always cheaper and less stressful.' ],
+			[ 'q' => 'How much does a nonprofit MSP cost?',
+			 'a' => 'Typical MSP pricing for nonprofits runs $1,500-$10,000 per month depending on staff count, scope, and complexity. CSuite Code offers verified-501(c)(3) discounted pricing - our Growth plan is $2,497 per month and our Enterprise plan is $4,997 per month. Both include complimentary GrantMind Pro access ($249/month value).' ],
+			[ 'q' => 'Are there contracts or minimum commitments?',
+			 'a' => 'No. Our managed service engagements are month-to-month. You can scale up or down as your funding changes, or end the engagement with 30 days notice. We earn your business every month, not via a contract penalty.' ],
+			[ 'q' => 'Does a nonprofit MSP replace an in-house IT person?',
+			 'a' => 'For most small nonprofits (under 50 staff), an MSP is more economical than a full-time hire. A senior IT person costs $70,000-$130,000 plus benefits; a managed service plan costs a fraction of that and gives you a team rather than a single person. Larger nonprofits often combine an internal IT lead with an MSP for backup and strategic guidance.' ],
+		],
+
+		// Nonprofit Tech Support (348)
+		348 => [
+			[ 'q' => 'How fast can you respond when something is broken?',
+			 'a' => 'For verified nonprofit clients, our average first response is under one hour during business hours. For emergencies (donor page down, payment processing broken), we take same-day priority engagement.' ],
+			[ 'q' => 'Do I have to be on a monthly plan to get tech support?',
+			 'a' => 'No. We offer hourly tech support at $150 per hour with verified-nonprofit discounts. Best for orgs with occasional needs. For organizations with daily tech support needs, a monthly care plan is usually more economical and includes faster response.' ],
+			[ 'q' => 'What kinds of tech problems do you handle?',
+			 'a' => 'Donation page issues (Stripe, PayPal, donor receipts), email and Google Workspace/Microsoft 365 problems, account lockouts and MFA setup, CRM-to-accounting sync (Bloomerang, Salesforce NPSP, QuickBooks), WordPress and website breakage, staff laptop setup, and the general "something stopped working" calls that derail your day.' ],
+			[ 'q' => 'Can you take an emergency engagement?',
+			 'a' => 'Yes. Book the next available slot on our calendar. We diagnose the problem on the call and quote the fix on the spot. Standard hourly rates apply, with verified-nonprofit discounts available.' ],
+		],
+
+		// Nonprofit Web Design (349)
+		349 => [
+			[ 'q' => 'What platform do you build nonprofit websites on?',
+			 'a' => 'WordPress for most engagements - because your team can update content without a developer, and the donor tooling ecosystem (Stripe, Bloomerang, FluentCRM, EventBrite) integrates natively. We can build on other platforms (Webflow, custom React/Next.js) for orgs with specific requirements.' ],
+			[ 'q' => 'How much does a nonprofit website cost?',
+			 'a' => 'A polished donation-ready site typically runs $5,000-$25,000 depending on scope. A simple refresh of an existing site can be as low as $2,500. We include site audits free in your discovery call and quote a fixed price after.' ],
+			[ 'q' => 'Will the site be WCAG / ADA accessible?',
+			 'a' => 'Yes. Every site we build meets WCAG 2.1 AA standards: color contrast, keyboard navigation, screen-reader markup, alt text, and captioned media. This is increasingly required by NEA, state arts councils, and major foundation funders.' ],
+			[ 'q' => 'Will my donor data sync between the site and our CRM?',
+			 'a' => 'Yes. We integrate your donation forms with Bloomerang, Salesforce NPSP, DonorPerfect, or whatever CRM you use. New donors are automatically created with proper tagging, and recurring giving syncs without manual reconciliation.' ],
+		],
+
+		// Pillar guide (350)
+		350 => [
+			[ 'q' => 'Is this guide free?',
+			 'a' => 'Yes. The complete guide is free to read on this page. No email gate. If you want a PDF copy or a discovery call to walk through how it applies to your nonprofit, you can book a 30-minute call at no cost.' ],
+			[ 'q' => 'Who should read this guide?',
+			 'a' => 'Executive directors, operations directors, and board members of small to mid-sized nonprofits (under 50 staff) who are evaluating in-house IT, an MSP, or hourly support. The guide is written in plain English for non-technical readers.' ],
+			[ 'q' => 'Does this guide apply to nonprofits outside Pennsylvania?',
+			 'a' => 'Yes. The principles - budgeting, security, choosing a provider, AI wins - apply to any 501(c)(3) organization in the United States. The cost benchmarks reflect mid-Atlantic pricing; West Coast and major metros tend to run 20-30% higher.' ],
+		],
+
+		// Education Nonprofits (351)
+		351 => [
+			[ 'q' => 'Are you FERPA-experienced?',
+			 'a' => 'Yes. We architect education-nonprofit tech with FERPA principles in mind: access controls on student data, audit trails, vendor data-sharing agreements, and the documentation accreditors expect. We are not FERPA auditors but we set systems up to support compliance.' ],
+			[ 'q' => 'Which student information systems (SIS) do you support?',
+			 'a' => 'PowerSchool, Schoology, Infinite Campus, Aspen, and a number of charter-school-specific SIS platforms. We handle initial setup, integrations with your LMS and donor CRM, parent portal configuration, and ongoing admin.' ],
+			[ 'q' => 'Do you work with charter schools specifically?',
+			 'a' => 'Yes. Charter schools have unique tech needs - state reporting, authorizer documentation, growing student enrollment with limited admin staff. We are sized to support charter networks of 1-5 campuses.' ],
+		],
+
+		// Arts Nonprofits (352)
+		352 => [
+			[ 'q' => 'Which ticketing systems do you support?',
+			 'a' => 'Patron Manager (Salesforce), Spektrix, Tessitura, EventBrite, and a few smaller platforms. We handle admin, integrations between your ticketing and donor CRM, and reporting workflows for marketing and box-office teams.' ],
+			[ 'q' => 'Do you handle accessibility audits for arts organizations?',
+			 'a' => 'Yes. We audit websites to WCAG 2.1 AA standards and provide remediation plans. This is increasingly required by NEA, state arts councils (PA Council on the Arts, NJ State Council on the Arts), and major arts funders.' ],
+			[ 'q' => 'Can you help with gala and benefit event tech?',
+			 'a' => 'Yes. Auction software (GiveSmart, OneCause), paddle-raise apps, sponsor recognition tools, and integration with your donor CRM so the data flows back without manual reconciliation.' ],
+		],
+
+		// Healthcare Nonprofits (353)
+		353 => [
+			[ 'q' => 'Are you HIPAA-compliant?',
+			 'a' => 'We are not a HIPAA compliance auditor. We architect IT in a way that supports HIPAA - access controls, encrypted transport, audit logs, BAA-signed vendors (Twilio, Zoom for Healthcare, Doxy.me), and documented incident response. For formal HIPAA compliance audits, we work with specialized auditors as needed.' ],
+			[ 'q' => 'Which telehealth platforms do you set up?',
+			 'a' => 'Zoom for Healthcare, Doxy.me, and SimplePractice are the most common. We handle initial setup, BAA execution, integration with your scheduling and EHR, and volunteer-provider onboarding workflows.' ],
+			[ 'q' => 'Do you support FQHC-equivalents or just free clinics?',
+			 'a' => 'We support a spectrum of healthcare nonprofits: free clinics, FQHC look-alikes and equivalents, community health organizations, patient advocacy nonprofits, and disease-specific foundations. Sizing varies but our discount applies to verified 501(c)(3) status regardless of subtype.' ],
+		],
 	];
 
 	$post_id = (int) $post_id;
@@ -641,6 +733,82 @@ function csuite_service_for_page( $post_id ) {
 					'audienceType' => 'New Jersey nonprofit organizations (501(c)(3))',
 					'geographicArea' => [ '@type' => 'State', 'name' => 'New Jersey' ],
 				],
+			] );
+
+		case 346: // Nonprofit IT Support
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofit-it-support/#service',
+				'name' => 'Nonprofit IT Support',
+				'serviceType' => 'IT Support for Nonprofit Organizations',
+				'description' => 'Day-to-day IT support, security patching, monitoring, backups, and helpdesk for verified 501(c)(3) organizations. Discounted nonprofit pricing and direct engineer access.',
+				'url' => 'https://csuitecode.com/nonprofit-it-support/',
+				'audience' => [ '@type' => 'Audience', 'audienceType' => 'Nonprofit organizations (501(c)(3))' ],
+			] );
+
+		case 347: // Nonprofit Managed Services / MSP
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofit-managed-services/#service',
+				'name' => 'Nonprofit Managed Services (MSP)',
+				'serviceType' => 'Managed IT Services for Nonprofits',
+				'description' => 'Full-stack managed service provider (MSP) for 501(c)(3) organizations. One predictable monthly fee covers IT, web, security, helpdesk, backups, and AI tooling. Month-to-month, discounted nonprofit pricing.',
+				'url' => 'https://csuitecode.com/nonprofit-managed-services/',
+				'audience' => [ '@type' => 'Audience', 'audienceType' => 'Nonprofit organizations (501(c)(3))' ],
+				'offers' => [
+					'@type' => 'Offer',
+					'description' => 'Growth managed plan ($2,497/mo) or Enterprise managed plan ($4,997/mo) - both include complimentary GrantMind Pro access ($249/mo value).',
+					'priceCurrency' => 'USD',
+					'availability' => 'https://schema.org/InStock',
+				],
+			] );
+
+		case 348: // Nonprofit Tech Support
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofit-tech-support/#service',
+				'name' => 'Nonprofit Tech Support',
+				'serviceType' => 'Tech Support for Nonprofit Organizations',
+				'description' => 'On-demand tech support for 501(c)(3) organizations - donation page issues, email problems, account lockouts, integrations, and website breakage. Hourly or monthly, real-engineer access.',
+				'url' => 'https://csuitecode.com/nonprofit-tech-support/',
+				'audience' => [ '@type' => 'Audience', 'audienceType' => 'Nonprofit organizations (501(c)(3))' ],
+			] );
+
+		case 349: // Nonprofit Web Design
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofit-web-design/#service',
+				'name' => 'Nonprofit Web Design and Development',
+				'serviceType' => 'Web Design for Nonprofit Organizations',
+				'description' => 'WordPress and custom web design and development for 501(c)(3) organizations. WCAG 2.1 AA accessibility, fast page speed, donor-ready forms, and analytics built in. Discounted nonprofit rates.',
+				'url' => 'https://csuitecode.com/nonprofit-web-design/',
+				'audience' => [ '@type' => 'Audience', 'audienceType' => 'Nonprofit organizations (501(c)(3))' ],
+			] );
+
+		case 351: // Education Nonprofits
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofit-it-support-education/#service',
+				'name' => 'IT Support for Education Nonprofits',
+				'serviceType' => 'IT Support for Education Nonprofits and Charter Schools',
+				'description' => 'FERPA-aware IT support for education nonprofits, charter schools, mentoring programs, and college-access organizations. SIS/LMS admin, donor management, AI tutoring integration.',
+				'url' => 'https://csuitecode.com/nonprofit-it-support-education/',
+				'audience' => [ '@type' => 'EducationalAudience', 'educationalRole' => 'Education nonprofit organizations' ],
+			] );
+
+		case 352: // Arts Nonprofits
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofit-it-support-arts/#service',
+				'name' => 'IT Support for Arts and Cultural Nonprofits',
+				'serviceType' => 'IT Support for Arts Organizations',
+				'description' => 'Tech support, ticketing, donor CRM, and accessible web design for arts and cultural nonprofits - galleries, theaters, music programs, museums, and community arts organizations.',
+				'url' => 'https://csuitecode.com/nonprofit-it-support-arts/',
+				'audience' => [ '@type' => 'Audience', 'audienceType' => 'Arts and cultural nonprofit organizations' ],
+			] );
+
+		case 353: // Healthcare Nonprofits
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofit-it-support-healthcare/#service',
+				'name' => 'IT Support for Healthcare Nonprofits',
+				'serviceType' => 'HIPAA-aware IT Support for Healthcare Nonprofits',
+				'description' => 'HIPAA-aware tech support, patient communication tooling, telehealth integration, and donor systems for healthcare nonprofits, free clinics, community health organizations, and patient advocacy nonprofits.',
+				'url' => 'https://csuitecode.com/nonprofit-it-support-healthcare/',
+				'audience' => [ '@type' => 'MedicalAudience', 'audienceType' => 'Healthcare nonprofit organizations' ],
 			] );
 
 		case 288: // Nonprofits
