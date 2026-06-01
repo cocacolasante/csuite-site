@@ -26,3 +26,6 @@ wp-content/upgrade/
 # OS junk
 Thumbs.db
 .DS_Store
+
+# Operational pre-push rollback snapshots (local only)
+backup/pre-push-*/

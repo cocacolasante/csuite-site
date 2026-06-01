@@ -215,6 +215,154 @@ function csuite_faqs_for_page( $post_id ) {
 			[ 'q' => 'Do you support FQHC-equivalents or just free clinics?',
 			 'a' => 'We support a spectrum of healthcare nonprofits: free clinics, FQHC look-alikes and equivalents, community health organizations, patient advocacy nonprofits, and disease-specific foundations. Sizing varies but our discount applies to verified 501(c)(3) status regardless of subtype.' ],
 		],
+
+		// BLOG: Managed IT pricing pillar (405)
+		405 => [
+			[ 'q' => 'How much do managed IT services cost in Philadelphia?',
+			 'a' => 'Most Philadelphia-area small businesses pay $100 to $200 per user per month for fully managed IT. A 15-person office typically budgets $1,500 to $3,000 per month for helpdesk, security, monitoring, and backups. Break-fix support runs about $150 per hour.' ],
+			[ 'q' => 'Is managed IT worth the cost for a small business?',
+			 'a' => 'For most businesses past about five employees, yes. A single serious incident - ransomware recovery, an extended outage, a breach notification - can cost more than a full year of managed fees, and managed IT is designed to prevent those incidents rather than react to them.' ],
+			[ 'q' => 'What makes a managed IT quote go up?',
+			 'a' => 'Five factors: compliance requirements (HIPAA, SOC 2), security depth (EDR and managed detection), on-site visit needs, number of locations, and legacy systems that are expensive to keep secure. Regulated industries trend toward the higher end of the range.' ],
+			[ 'q' => 'Does managed IT cost more in Philadelphia than NJ or Delaware?',
+			 'a' => 'Pricing across the tri-state region is broadly similar. Delaware\'s finance and legal sector often needs SOC 2-aligned documentation that pushes toward the higher end, and South Jersey tracks the Philadelphia market closely given the shared metro.' ],
+		],
+
+		// BLOG: Managed IT vs break-fix vs in-house (406)
+		406 => [
+			[ 'q' => 'What is the difference between break-fix and managed IT?',
+			 'a' => 'Break-fix is reactive - you call and pay hourly when something breaks. Managed IT is proactive - a provider monitors, patches, and secures your systems for a flat monthly fee, preventing most problems. Break-fix is cheaper when nothing goes wrong; managed IT is cheaper the moment something does.' ],
+			[ 'q' => 'When does break-fix IT make sense?',
+			 'a' => 'For very small offices of roughly one to five people with simple needs, no compliance obligations, and tolerance for the occasional bad day. The trade-off is that you are last in line during a widespread event like a regional outage or ransomware wave.' ],
+			[ 'q' => 'When should a business hire in-house IT?',
+			 'a' => 'In-house generally makes financial sense past about 50 employees, or when you have constant business-hours needs that justify a full salary. Many firms at that size run a hybrid - internal staff plus a managed provider for after-hours coverage and specialized security.' ],
+			[ 'q' => 'Which IT model is cheapest overall?',
+			 'a' => 'It depends on how often things break. Across a typical year, managed IT usually comes out lowest for businesses past a handful of employees, because one major incident can cost more than a year of managed fees.' ],
+		],
+
+		// BLOG: Small-business IT security checklist (408)
+		407 => [
+			[ 'q' => 'What are the most important IT security controls for a small business?',
+			 'a' => 'Multi-factor authentication everywhere, tested encrypted backups, modern endpoint protection (EDR), and email security stop or contain the large majority of attacks that hit small businesses. Start there before anything else.' ],
+			[ 'q' => 'Why are small businesses targeted by cyberattacks?',
+			 'a' => 'Because attackers assume their defenses are weak. Roughly 43% of cyberattacks target small businesses, and most breaches exploit basic gaps - missing MFA, unpatched software, untested backups - rather than sophisticated techniques.' ],
+			[ 'q' => 'What is the 3-2-1 backup rule?',
+			 'a' => 'Keep three copies of your data, on two different types of media, with one copy off-site. It is the baseline standard for surviving hardware failure, ransomware, and disasters - but only if you have actually tested restoring from it.' ],
+			[ 'q' => 'How often should a small business review its IT security?',
+			 'a' => 'At least annually, and after any major change - new staff, new software, a new location, or an incident. Both your business and the threat landscape change, so a control set that was solid last year may have gaps now.' ],
+		],
+
+		// IT support for professional services (401)
+		401 => [
+			[ 'q' => 'Do you provide HIPAA or SOC 2 compliant IT for professional firms?',
+			 'a' => 'Yes. We build SOC 2-aware controls - access management, encryption, logging, and documented backups - that hold up to client and carrier due-diligence. For firms with health data we add HIPAA safeguards and sign a Business Associate Agreement.' ],
+			[ 'q' => 'Do you support Clio, NetDocuments, and QuickBooks?',
+			 'a' => 'Yes. We support the practice-management, document-management, and accounting platforms law, accounting, and insurance firms run on - including Clio, NetDocuments, iManage, QuickBooks, and the major insurance agency systems - keeping them patched, backed up, and integrated.' ],
+			[ 'q' => 'How do you protect attorney-client and IOLTA data?',
+			 'a' => 'Through encryption, role-based access, audit logging, and tested backups, plus email security to stop the wire-fraud and phishing attacks that target trust accounts. Controls are documented so they survive a bar or carrier audit.' ],
+			[ 'q' => 'How much does managed IT for a professional firm cost?',
+			 'a' => 'Most firms pay between $100 and $200 per user per month for fully managed IT and security. The exact figure depends on headcount, compliance requirements, and whether you need on-site support across the Philadelphia, South Jersey, or Delaware area.' ],
+			[ 'q' => 'Do you sell the software you recommend?',
+			 'a' => 'No. We are vendor-neutral and earn no commissions on the tools we recommend, so the advice is built around your firm\'s needs and budget. Day-to-day operations are then handled by our managed IT division.' ],
+		],
+
+		// IT support for healthcare practices (402)
+		402 => [
+			[ 'q' => 'What makes IT support HIPAA-compliant for a practice?',
+			 'a' => 'HIPAA-compliant IT protects electronic patient data (ePHI) with encryption, controlled and logged access, and tested backups, and requires every vendor that touches that data - including us - to sign a Business Associate Agreement. We implement those technical safeguards for your practice.' ],
+			[ 'q' => 'Do you support Dentrix, Epic, and veterinary systems?',
+			 'a' => 'Yes. We support dental platforms (Dentrix, Eaglesoft, Open Dental), medical EHRs (Epic, athenahealth, eClinicalWorks), and veterinary systems (Cornerstone, AVImark, ezyVet) - keeping them patched, backed up, and performant during a full schedule.' ],
+			[ 'q' => 'Will you sign a Business Associate Agreement?',
+			 'a' => 'Yes. We sign a BAA with your practice and hold your other technology vendors to theirs, which is a HIPAA requirement whenever a third party can access protected health information.' ],
+			[ 'q' => 'Is this affordable for a single private practice?',
+			 'a' => 'Yes. Pricing is sized for an independent practice - typically $100 to $200 per user per month - not a hospital network budget. Verified nonprofit clinics qualify for discounted rates.' ],
+			[ 'q' => 'Do you support HIPAA-compliant telehealth?',
+			 'a' => 'Yes. We set up BAA-backed telehealth platforms such as Zoom for Healthcare and Doxy.me, and make sure your network handles video and imaging without dropouts during patient visits.' ],
+		],
+
+		// IT support / AI for home services (403)
+		403 => [
+			[ 'q' => 'What does AI automation do for an HVAC or plumbing business?',
+			 'a' => 'It handles the admin work that costs you jobs - instantly texting back missed calls and web leads, booking appointments, sending estimate follow-ups, and automating invoicing and payment reminders - so your team stays focused on the work in the field.' ],
+			[ 'q' => 'Do you work with ServiceTitan, Housecall Pro, and Jobber?',
+			 'a' => 'Yes. We connect the field-service platforms you already use - ServiceTitan, Housecall Pro, Jobber - to your phones, calendar, and accounting so dispatch, scheduling, and invoicing flow without manual double-entry.' ],
+			[ 'q' => 'How fast can you set up the first automation?',
+			 'a' => 'Most first automations ship in two to four weeks. We start with the single workflow costing you the most money - usually missed leads or slow invoicing - prove the return, then move to the next.' ],
+			[ 'q' => 'Will I have to replace my current software?',
+			 'a' => 'No. We work with your existing stack and make the pieces talk to each other. The goal is to get more out of the tools you already pay for, not start over.' ],
+			[ 'q' => 'Do you serve home-services businesses locally?',
+			 'a' => 'Yes - we serve HVAC, plumbing, electrical, and cleaning businesses across Philadelphia, South Jersey, and Delaware, with remote setup and on-site help when needed.' ],
+		],
+
+		// IT support for real estate & construction (404)
+		404 => [
+			[ 'q' => 'How do you protect real estate transactions from wire fraud?',
+			 'a' => 'We layer email security, multi-factor authentication, and staff awareness to stop the business-email-compromise attacks that target closings and construction draws, plus verified-payment procedures so a spoofed wire instruction does not cost a client their down payment.' ],
+			[ 'q' => 'Can you support multiple offices and job sites?',
+			 'a' => 'Yes. We build secure, reliable connectivity and remote access across offices, job trailers, and the field, so plans, photos, contracts, and approvals move without a trip back to the office.' ],
+			[ 'q' => 'Do you support Procore, Buildertrend, and dotloop?',
+			 'a' => 'Yes. We support the platforms real estate and construction firms run on - Procore, Buildertrend, dotloop, DocuSign, AppFolio, Yardi, and MLS/CRM systems - keeping them connected, secure, and backed up.' ],
+			[ 'q' => 'What does managed IT cost for a real estate or construction firm?',
+			 'a' => 'Most firms pay $100 to $200 per user per month for fully managed IT, depending on the number of sites, field connectivity needs, and security requirements. We serve firms across Philadelphia, South Jersey, and Delaware.' ],
+			[ 'q' => 'How do you protect project files from ransomware?',
+			 'a' => 'With encrypted, off-site backups and a tested recovery plan, plus endpoint protection and monitoring - so a ransomware hit on project files, contracts, or financials is a recoverable event, not an existential one.' ],
+		],
+
+		// Delaware nonprofits (391)
+		391 => [
+			[ 'q' => 'Do you work with nonprofits across all of Delaware?',
+			 'a' => 'Yes. We work with 501(c)(3) organizations statewide - New Castle County (Wilmington, Newark), Kent County (Dover), and Sussex County (Georgetown, Lewes, Rehoboth). Most engagements are remote-first; we drive down I-95 for kickoffs and major milestones.' ],
+			[ 'q' => 'Do you know Delaware-specific funders and grant sources?',
+			 'a' => 'Yes. GrantMind Pro (included with your engagement) covers the Longwood Foundation, the Welfare Foundation, the Crystal Trust, the Delaware Community Foundation, and the Delaware Division of the Arts - plus federal opportunities and state grants through the Department of State.' ],
+			[ 'q' => 'What discount do Delaware nonprofits receive?',
+			 'a' => 'Verified 501(c)(3) organizations receive discounted hourly and project rates. Smaller organizations with annual budgets under $500,000 qualify for our deepest discount tier. Send your IRS determination letter or EIN to confirm status.' ],
+			[ 'q' => 'What kinds of Delaware nonprofits do you typically work with?',
+			 'a' => 'Social-services organizations, arts and cultural nonprofits, community health groups, environmental nonprofits, and small foundations - from the Wilmington corridor to the coastal communities. We are sized for organizations with under-$5M budgets and lean staffs.' ],
+			[ 'q' => 'Is GrantMind Pro really included for Delaware nonprofits?',
+			 'a' => 'Yes. GrantMind Pro is our AI-powered grant research and proposal-writing platform, normally $249 per month. While you are an active CSuite Code nonprofit client, your team\'s access is included at no additional cost.' ],
+		],
+
+		// Managed IT Philadelphia (381)
+		381 => [
+			[ 'q' => 'How much do managed IT services cost in Philadelphia?',
+			 'a' => 'Most Philadelphia small businesses pay between $100 and $200 per user per month for fully managed IT, depending on security and compliance needs. Occasional break-fix support runs about $150 per hour. Verified 501(c)(3) nonprofits receive discounted rates.' ],
+			[ 'q' => 'Do you provide on-site IT support in Philadelphia?',
+			 'a' => 'Yes. We are based in the Greater Philadelphia area, so while most support is remote for speed, we drive on-site for installs, network work, and outages across Center City, University City, Manayunk, the Main Line, and Bucks, Montgomery, Chester, and Delaware counties.' ],
+			[ 'q' => 'What does a managed IT provider actually do?',
+			 'a' => 'A managed IT provider runs your day-to-day technology for a flat monthly fee - helpdesk, security patching, monitoring, backups, and cybersecurity. Systems are watched proactively, so most problems are caught and fixed before they interrupt your team.' ],
+			[ 'q' => 'Do you support Pennsylvania data-breach compliance?',
+			 'a' => 'Yes. We align security controls - MFA, EDR, monitoring, and documented backups - with Pennsylvania\'s Breach of Personal Information Notification Act, so a security incident does not become a compliance and notification problem on top of the technical one.' ],
+			[ 'q' => 'What size businesses do you work with in Philadelphia?',
+			 'a' => 'We are sized for small businesses and nonprofits, typically 5 to 75 staff, that need reliable IT but cannot justify a full in-house department. You get direct access to a senior engineer rather than a tier-one call queue.' ],
+		],
+
+		// Managed IT South Jersey (382)
+		382 => [
+			[ 'q' => 'How much does managed IT cost in South Jersey?',
+			 'a' => 'South Jersey businesses typically pay $100 to $200 per user per month for fully managed IT, or about $150 per hour for occasional break-fix support. The managed model is usually more economical once a team passes roughly ten employees.' ],
+			[ 'q' => 'Can you come on-site in South Jersey?',
+			 'a' => 'Yes, often the same day. We are based directly across the Delaware in the Philadelphia area, so Cherry Hill, Camden, Mount Laurel, Marlton, Voorhees, Vineland, and Glassboro are a short drive for installs, network work, and outages.' ],
+			[ 'q' => 'Which South Jersey counties do you serve?',
+			 'a' => 'We serve Camden, Burlington, and Gloucester counties most actively for on-site work, and the wider South Jersey region remotely. We work with professional-services firms, healthcare practices, logistics companies, and nonprofits.' ],
+			[ 'q' => 'Do you handle New Jersey data-breach compliance?',
+			 'a' => 'Yes. We map your security controls to New Jersey\'s data-breach notification law and build the documentation, MFA, monitoring, and tested backups that keep an incident from becoming a regulatory problem.' ],
+			[ 'q' => 'Is managed IT better than hiring in-house in South Jersey?',
+			 'a' => 'For most teams under about 50 staff, yes. A managed plan costs far less than a $70,000-plus in-house hire, covers nights and weekends, and never takes vacation - while still giving you direct access to a senior engineer.' ],
+		],
+
+		// Managed IT Delaware (383)
+		383 => [
+			[ 'q' => 'How much do managed IT services cost in Delaware?',
+			 'a' => 'Delaware small businesses generally pay $100 to $200 per user per month for fully managed IT, or about $150 per hour for break-fix support. Finance and legal firms with stricter security needs tend toward the higher end.' ],
+			[ 'q' => 'Do you serve businesses across all of Delaware?',
+			 'a' => 'Yes - statewide. We support the Wilmington and Newark corridor and down to Dover and Kent County, with remote-first support and on-site visits for hardware, networks, and outages. We are within easy reach from the Greater Philadelphia area.' ],
+			[ 'q' => 'Do you understand Delaware\'s finance and legal sector requirements?',
+			 'a' => 'Yes. Delaware is the corporate and financial-services capital of the country, and many firms here face SOC 2 and client due-diligence demands. We build documented controls, MFA, monitoring, and tested recovery that hold up to that scrutiny.' ],
+			[ 'q' => 'Do you handle Delaware data-breach compliance?',
+			 'a' => 'Yes. We align your security program with Delaware\'s data-breach notification law and provide the documentation and controls regulators and clients expect after an incident.' ],
+			[ 'q' => 'What does managed IT include for a Delaware business?',
+			 'a' => 'It bundles helpdesk, patching, monitoring, backups, and cybersecurity into one predictable monthly fee, plus cloud management for Microsoft 365 or Google Workspace and a documented disaster-recovery plan.' ],
+		],
 	];
 
 	$post_id = (int) $post_id;
@@ -281,6 +429,7 @@ function csuite_related_links_for_page( $post_id ) {
 			'links' => [
 				[ 'url' => '/nonprofits-pennsylvania/', 'label' => 'Pennsylvania nonprofits', 'desc' => 'Statewide coverage across PA - from the Lehigh Valley to Pittsburgh.' ],
 				[ 'url' => '/nonprofits-new-jersey/', 'label' => 'New Jersey nonprofits', 'desc' => 'South Jersey and beyond - just across the Delaware.' ],
+				[ 'url' => '/nonprofits-delaware/', 'label' => 'Delaware nonprofits', 'desc' => 'Wilmington, Newark, and Dover - just down I-95.' ],
 				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit services overview', 'desc' => 'The full breakdown of what we do for nonprofits.' ],
 			],
 		],
@@ -290,6 +439,7 @@ function csuite_related_links_for_page( $post_id ) {
 			'links' => [
 				[ 'url' => '/nonprofits-philadelphia/', 'label' => 'Philadelphia nonprofits', 'desc' => 'Local hands-on partnership for Greater Philly orgs.' ],
 				[ 'url' => '/nonprofits-new-jersey/', 'label' => 'New Jersey nonprofits', 'desc' => 'Just across the Delaware. South, Central, and North Jersey.' ],
+				[ 'url' => '/nonprofits-delaware/', 'label' => 'Delaware nonprofits', 'desc' => 'Wilmington, Newark, and Dover - just down I-95.' ],
 				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit services overview', 'desc' => 'The full breakdown of what we do for nonprofits.' ],
 			],
 		],
@@ -299,7 +449,121 @@ function csuite_related_links_for_page( $post_id ) {
 			'links' => [
 				[ 'url' => '/nonprofits-philadelphia/', 'label' => 'Philadelphia nonprofits', 'desc' => 'Across the Delaware. Local hands-on partnership in PHL.' ],
 				[ 'url' => '/nonprofits-pennsylvania/', 'label' => 'Pennsylvania nonprofits', 'desc' => 'Statewide coverage across the commonwealth.' ],
+				[ 'url' => '/nonprofits-delaware/', 'label' => 'Delaware nonprofits', 'desc' => 'Wilmington, Newark, and Dover - just down I-95.' ],
 				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit services overview', 'desc' => 'The full breakdown of what we do for nonprofits.' ],
+			],
+		],
+
+		// BLOG: Managed IT pricing pillar (405)
+		405 => [
+			'heading' => 'Keep reading',
+			'links' => [
+				[ 'url' => '/managed-it-vs-break-fix-vs-in-house/', 'label' => 'Managed IT vs. break-fix vs. in-house', 'desc' => 'Which IT model is right for your business size.' ],
+				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'See what a managed plan actually includes.' ],
+				[ 'url' => '/pricing/', 'label' => 'Pricing', 'desc' => 'Transparent engagement tiers and nonprofit discounts.' ],
+			],
+		],
+		// BLOG: vs break-fix (406)
+		406 => [
+			'heading' => 'Keep reading',
+			'links' => [
+				[ 'url' => '/managed-it-services-cost-philadelphia-tri-state/', 'label' => 'What managed IT costs in 2026', 'desc' => 'Tri-state pricing guide with real ranges.' ],
+				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'Helpdesk, security, cloud, and backups on one plan.' ],
+				[ 'url' => '/managed-it-philadelphia/', 'label' => 'Managed IT in Philadelphia', 'desc' => 'Local managed IT across the region.' ],
+			],
+		],
+		// BLOG: security checklist (408)
+		407 => [
+			'heading' => 'Keep reading',
+			'links' => [
+				[ 'url' => '/managed-it-services-cost-philadelphia-tri-state/', 'label' => 'What managed IT costs in 2026', 'desc' => 'Tri-state pricing guide with real ranges.' ],
+				[ 'url' => '/it-support-professional-services/', 'label' => 'IT for professional firms', 'desc' => 'Compliance-aware security for law and accounting.' ],
+				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'Get these 15 controls handled for you.' ],
+			],
+		],
+
+		// IT support professional services (401)
+		401 => [
+			'heading' => 'Related services',
+			'links' => [
+				[ 'url' => '/it-support-healthcare-practices/', 'label' => 'IT for medical &amp; dental practices', 'desc' => 'HIPAA-aware managed IT for private practices.' ],
+				[ 'url' => '/it-support-real-estate-construction/', 'label' => 'IT for real estate &amp; construction', 'desc' => 'Multi-site connectivity and transaction security.' ],
+				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'Helpdesk, security, cloud, and backups on one monthly plan.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'CTO-level guidance above day-to-day IT.' ],
+			],
+		],
+		// IT support healthcare practices (402)
+		402 => [
+			'heading' => 'Related services',
+			'links' => [
+				[ 'url' => '/it-support-professional-services/', 'label' => 'IT for law &amp; accounting firms', 'desc' => 'Compliance-aware managed IT for professional services.' ],
+				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'Helpdesk, security, cloud, and backups on one monthly plan.' ],
+				[ 'url' => '/nonprofit-it-support-healthcare/', 'label' => 'Healthcare nonprofit IT', 'desc' => 'For free clinics and community-health nonprofits.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'CTO-level guidance above day-to-day IT.' ],
+			],
+		],
+		// IT / AI home services (403)
+		403 => [
+			'heading' => 'Related services',
+			'links' => [
+				[ 'url' => '/services-ai-automation/', 'label' => 'Home-services AI automation', 'desc' => 'Scheduling, invoicing, and follow-up automation in depth.' ],
+				[ 'url' => '/ai/', 'label' => 'AI integration', 'desc' => 'Broader practical AI automation for small businesses.' ],
+				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'Reliable IT behind your field-service tools.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'CTO-level guidance above day-to-day IT.' ],
+			],
+		],
+		// IT real estate & construction (404)
+		404 => [
+			'heading' => 'Related services',
+			'links' => [
+				[ 'url' => '/it-support-professional-services/', 'label' => 'IT for law &amp; accounting firms', 'desc' => 'Compliance-aware managed IT for professional services.' ],
+				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'Multi-site helpdesk, security, cloud, and backups.' ],
+				[ 'url' => '/managed-it-philadelphia/', 'label' => 'Managed IT in Philadelphia', 'desc' => 'Local on-site support across the region.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'CTO-level guidance above day-to-day IT.' ],
+			],
+		],
+
+		// Delaware nonprofits (391)
+		391 => [
+			'heading' => 'Also serving',
+			'links' => [
+				[ 'url' => '/nonprofits-philadelphia/', 'label' => 'Philadelphia nonprofits', 'desc' => 'Local hands-on partnership for Greater Philly orgs.' ],
+				[ 'url' => '/nonprofits-pennsylvania/', 'label' => 'Pennsylvania nonprofits', 'desc' => 'Statewide coverage across the commonwealth.' ],
+				[ 'url' => '/nonprofits-new-jersey/', 'label' => 'New Jersey nonprofits', 'desc' => 'South, Central, and North Jersey.' ],
+				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit services overview', 'desc' => 'The full breakdown of what we do for nonprofits.' ],
+			],
+		],
+
+		// Managed IT Philadelphia (381)
+		381 => [
+			'heading' => 'Managed IT near you',
+			'links' => [
+				[ 'url' => '/managed-it-south-jersey/', 'label' => 'Managed IT in South Jersey', 'desc' => 'Same-day on-site across Camden, Burlington, and Gloucester counties.' ],
+				[ 'url' => '/managed-it-delaware/', 'label' => 'Managed IT in Delaware', 'desc' => 'Wilmington, Newark, and Dover - statewide coverage.' ],
+				[ 'url' => '/it-support-professional-services/', 'label' => 'IT support for law &amp; accounting firms', 'desc' => 'Confidentiality, compliance, and uptime for professional services.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'The strategic layer above day-to-day IT.' ],
+			],
+		],
+
+		// Managed IT South Jersey (382)
+		382 => [
+			'heading' => 'Managed IT near you',
+			'links' => [
+				[ 'url' => '/managed-it-philadelphia/', 'label' => 'Managed IT in Philadelphia', 'desc' => 'On-site across the five-county Greater Philadelphia region.' ],
+				[ 'url' => '/managed-it-delaware/', 'label' => 'Managed IT in Delaware', 'desc' => 'Wilmington, Newark, and Dover - statewide coverage.' ],
+				[ 'url' => '/it-support-healthcare-practices/', 'label' => 'IT for medical &amp; dental practices', 'desc' => 'HIPAA-aware support for healthcare offices.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'The strategic layer above day-to-day IT.' ],
+			],
+		],
+
+		// Managed IT Delaware (383)
+		383 => [
+			'heading' => 'Managed IT near you',
+			'links' => [
+				[ 'url' => '/managed-it-philadelphia/', 'label' => 'Managed IT in Philadelphia', 'desc' => 'On-site across the five-county Greater Philadelphia region.' ],
+				[ 'url' => '/managed-it-south-jersey/', 'label' => 'Managed IT in South Jersey', 'desc' => 'Same-day on-site across Camden, Burlington, and Gloucester.' ],
+				[ 'url' => '/it-support-professional-services/', 'label' => 'IT support for law &amp; accounting firms', 'desc' => 'Built for Delaware\'s finance and legal sector.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'The strategic layer above day-to-day IT.' ],
 			],
 		],
 	];
@@ -313,7 +577,7 @@ function csuite_related_links_for_page( $post_id ) {
  * service page so it shows up between body content and the FAQ accordion.
  */
 add_filter( 'the_content', function ( $content ) {
-	if ( ! is_singular( 'page' ) || ! in_the_loop() || ! is_main_query() ) return $content;
+	if ( ! is_singular( [ 'page', 'post' ] ) || ! in_the_loop() || ! is_main_query() ) return $content;
 	$post_id = get_queried_object_id();
 	$related = csuite_related_links_for_page( $post_id );
 	if ( ! $related ) return $content;
@@ -348,7 +612,7 @@ add_filter( 'the_content', function ( $content ) {
  * Inline CSS for the related-services block.
  */
 add_action( 'wp_head', function () {
-	if ( ! is_singular( 'page' ) ) return;
+	if ( ! is_singular( [ 'page', 'post' ] ) ) return;
 	if ( ! csuite_related_links_for_page( get_queried_object_id() ) ) return;
 	?>
 	<style id="csuite-related-css">
@@ -403,7 +667,7 @@ add_shortcode( 'csuite_faq', function ( $atts ) {
  * Inline CSS for the FAQ section, matching Kadence palette tokens.
  */
 add_action( 'wp_head', function () {
-	if ( ! is_singular( 'page' ) ) return;
+	if ( ! is_singular( [ 'page', 'post' ] ) ) return;
 	if ( ! csuite_faqs_for_page( get_queried_object_id() ) ) return;
 	?>
 	<style id="csuite-faq-css">
@@ -438,7 +702,8 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 			$node['@type'] = [ 'Organization', 'ProfessionalService', 'LocalBusiness' ];
 			$node['url'] = 'https://csuitecode.com';
 			$node['email'] = 'Info@csuitecode.com';
-			$node['description'] = 'CSuite Code is a Philadelphia-based technology consulting firm helping nonprofits and small businesses across Pennsylvania and New Jersey with websites, IT support, AI automation, managed cloud, and fractional CTO services.';
+			$node['telephone'] = '+1-267-566-4622';
+			$node['description'] = 'CSuite Code is a Philadelphia-based, vendor-neutral technology advisor with a managed IT division, serving small businesses and nonprofits across Pennsylvania, New Jersey, and Delaware. Managed IT support, cloud, cybersecurity guidance, AI automation, and fractional CTO leadership.';
 			$node['sameAs'] = [ CSUITE_LINKEDIN ];
 			$node['address'] = [
 				'@type' => 'PostalAddress',
@@ -453,9 +718,15 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 			];
 			$node['areaServed'] = [
 				[ '@type' => 'City', 'name' => 'Philadelphia' ],
+				[ '@type' => 'City', 'name' => 'Wilmington' ],
+				[ '@type' => 'City', 'name' => 'Dover' ],
+				[ '@type' => 'City', 'name' => 'Camden' ],
+				[ '@type' => 'City', 'name' => 'Cherry Hill' ],
 				[ '@type' => 'State', 'name' => 'Pennsylvania' ],
 				[ '@type' => 'State', 'name' => 'New Jersey' ],
+				[ '@type' => 'State', 'name' => 'Delaware' ],
 				[ '@type' => 'AdministrativeArea', 'name' => 'Greater Philadelphia Region' ],
+				[ '@type' => 'AdministrativeArea', 'name' => 'Delaware Valley' ],
 				[ '@type' => 'Country', 'name' => 'United States' ],
 			];
 			$node['serviceArea'] = [
@@ -468,15 +739,19 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 				'geoRadius' => '150000',
 			];
 			$node['knowsAbout'] = [
-				'Nonprofit technology consulting',
-				'IT consulting for nonprofits in Philadelphia',
-				'Technology services for Pennsylvania nonprofits',
-				'Technology services for New Jersey nonprofits',
-				'Web development',
+				'Managed IT services in Philadelphia',
+				'Managed IT services in South Jersey',
+				'IT support in Delaware',
+				'Vendor-neutral technology advisory',
+				'IT support for law firms',
+				'HIPAA IT support for medical and dental practices',
+				'IT support for real estate and construction firms',
+				'Cybersecurity advisory',
 				'Managed cloud services',
 				'AI integration for small business',
-				'Cloud migration',
 				'Fractional CTO services',
+				'Nonprofit technology consulting',
+				'Technology services for Pennsylvania, New Jersey, and Delaware nonprofits',
 				'Grant writing software',
 			];
 			$node['knowsLanguage'] = 'en-US';
@@ -484,7 +759,8 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 				'@type' => 'ContactPoint',
 				'contactType' => 'customer support',
 				'email' => 'Info@csuitecode.com',
-				'areaServed' => [ 'US-PA', 'US-NJ' ],
+				'telephone' => '+1-267-566-4622',
+				'areaServed' => [ 'US-PA', 'US-NJ', 'US-DE' ],
 				'availableLanguage' => 'en',
 			];
 			$node['founder'] = [ '@id' => 'https://csuitecode.com/#founder' ];
@@ -495,6 +771,14 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 		// We replace with a curated founder Person node below.
 		if ( $node['@type'] === 'Person' ) {
 			unset( $data[ $key ] );
+		}
+
+		// Point any Article/BlogPosting author at the curated founder Person node,
+		// so blog posts carry a named, credentialed author (E-E-A-T / AEO).
+		$types = (array) $node['@type'];
+		if ( array_intersect( [ 'Article', 'BlogPosting', 'NewsArticle' ], $types ) ) {
+			$node['author'] = [ '@id' => 'https://csuitecode.com/#founder' ];
+			$data[ $key ] = $node;
 		}
 	}
 
@@ -518,8 +802,8 @@ add_filter( 'rank_math/json_ld', function ( $data, $jsonld ) {
 		],
 	];
 
-	// Per-page Service schema
-	if ( is_singular( 'page' ) ) {
+	// Per-page (and per-post) Service / FAQ / HowTo schema, keyed by ID.
+	if ( is_singular( [ 'page', 'post' ] ) ) {
 		$post_id = get_queried_object_id();
 		if ( $service = csuite_service_for_page( $post_id ) ) {
 			$data[] = $service;
@@ -683,6 +967,106 @@ function csuite_service_for_page( $post_id ) {
 	];
 
 	switch ( (int) $post_id ) {
+		case 401: // IT support for professional services
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/it-support-professional-services/#service',
+				'name' => 'IT Support for Law, Accounting & Insurance Firms',
+				'serviceType' => 'Managed IT Services for Professional Services Firms',
+				'description' => 'Compliance-aware managed IT and security for law firms, accounting and CPA firms, and insurance agencies - confidentiality, document and practice systems, and billable-hour uptime. Vendor-neutral, sized for small firms.',
+				'url' => 'https://csuitecode.com/it-support-professional-services/',
+				'audience' => [ '@type' => 'BusinessAudience', 'name' => 'Law, accounting, and insurance firms' ],
+			] );
+
+		case 402: // IT support for healthcare practices
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/it-support-healthcare-practices/#service',
+				'name' => 'HIPAA-Compliant IT Support for Dental, Medical & Veterinary Practices',
+				'serviceType' => 'HIPAA-Compliant Managed IT Services',
+				'description' => 'HIPAA-aware managed IT and security for dental, medical, and veterinary practices - ePHI protection, signed BAAs, EHR and practice-management support, and HIPAA-compliant telehealth. Sized for independent practices.',
+				'url' => 'https://csuitecode.com/it-support-healthcare-practices/',
+				'audience' => [ '@type' => 'MedicalAudience', 'name' => 'Dental, medical, and veterinary practices' ],
+			] );
+
+		case 403: // IT & AI for home services
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/it-support-home-services/#service',
+				'name' => 'IT & AI Automation for HVAC, Plumbing & Electrical',
+				'serviceType' => 'IT Support and AI Automation for Home Services Businesses',
+				'description' => 'IT support and practical AI automation for home-services businesses - HVAC, plumbing, electrical, and cleaning. Dispatch and scheduling, AI lead response and booking, and automated invoicing across ServiceTitan, Housecall Pro, and Jobber.',
+				'url' => 'https://csuitecode.com/it-support-home-services/',
+				'audience' => [ '@type' => 'BusinessAudience', 'name' => 'HVAC, plumbing, electrical, and cleaning businesses' ],
+			] );
+
+		case 404: // IT support for real estate & construction
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/it-support-real-estate-construction/#service',
+				'name' => 'IT Support for Real Estate & Construction Firms',
+				'serviceType' => 'Managed IT Services for Real Estate and Construction',
+				'description' => 'Managed IT for real estate brokerages, property managers, and construction firms - multi-site and field connectivity, document and transaction security with wire-fraud protection, and backups across Procore, Buildertrend, and dotloop.',
+				'url' => 'https://csuitecode.com/it-support-real-estate-construction/',
+				'audience' => [ '@type' => 'BusinessAudience', 'name' => 'Real estate and construction firms' ],
+			] );
+
+		case 391: // Delaware nonprofits
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/nonprofits-delaware/#service',
+				'name' => 'Technology Services for Delaware Nonprofits',
+				'serviceType' => 'Nonprofit Technology Consulting',
+				'description' => 'Statewide technology services for Delaware 501(c)(3) organizations from a Philadelphia-area team. Wilmington, Newark, Dover, and the coastal communities. Discounted rates and complimentary GrantMind Pro access.',
+				'url' => 'https://csuitecode.com/nonprofits-delaware/',
+				'areaServed' => [
+					[ '@type' => 'State', 'name' => 'Delaware' ],
+				],
+				'audience' => [
+					'@type' => 'Audience',
+					'audienceType' => 'Delaware nonprofit organizations (501(c)(3))',
+					'geographicArea' => [ '@type' => 'State', 'name' => 'Delaware' ],
+				],
+			] );
+
+		case 381: // Managed IT Philadelphia (core business)
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/managed-it-philadelphia/#service',
+				'name' => 'Managed IT Services & IT Support in Philadelphia',
+				'serviceType' => 'Managed IT Services',
+				'description' => 'Managed IT services and IT support for Philadelphia small businesses - helpdesk, security patching, monitoring, backups, and cloud on a predictable monthly plan, with on-site support across the five-county region.',
+				'url' => 'https://csuitecode.com/managed-it-philadelphia/',
+				'areaServed' => [
+					[ '@type' => 'City', 'name' => 'Philadelphia', 'containedInPlace' => [ '@type' => 'State', 'name' => 'Pennsylvania' ] ],
+					[ '@type' => 'AdministrativeArea', 'name' => 'Greater Philadelphia' ],
+				],
+				'audience' => [ '@type' => 'BusinessAudience', 'name' => 'Philadelphia small businesses' ],
+			] );
+
+		case 382: // Managed IT South Jersey (core business)
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/managed-it-south-jersey/#service',
+				'name' => 'Managed IT Services & IT Support in South Jersey',
+				'serviceType' => 'Managed IT Services',
+				'description' => 'Managed IT services and IT support for South Jersey small businesses across Camden, Burlington, and Gloucester counties - helpdesk, security, monitoring, backups, and cloud, with same-day on-site support from across the Delaware.',
+				'url' => 'https://csuitecode.com/managed-it-south-jersey/',
+				'areaServed' => [
+					[ '@type' => 'AdministrativeArea', 'name' => 'South Jersey' ],
+					[ '@type' => 'City', 'name' => 'Cherry Hill', 'containedInPlace' => [ '@type' => 'State', 'name' => 'New Jersey' ] ],
+					[ '@type' => 'City', 'name' => 'Camden', 'containedInPlace' => [ '@type' => 'State', 'name' => 'New Jersey' ] ],
+				],
+				'audience' => [ '@type' => 'BusinessAudience', 'name' => 'South Jersey small businesses' ],
+			] );
+
+		case 383: // Managed IT Delaware (core business)
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/managed-it-delaware/#service',
+				'name' => 'Managed IT Services & IT Support in Delaware',
+				'serviceType' => 'Managed IT Services',
+				'description' => 'Managed IT services and IT support for Delaware small businesses statewide - Wilmington, Newark, and Dover. Helpdesk, cybersecurity, monitoring, backups, and cloud with documented controls for finance and legal firms.',
+				'url' => 'https://csuitecode.com/managed-it-delaware/',
+				'areaServed' => [
+					[ '@type' => 'State', 'name' => 'Delaware' ],
+					[ '@type' => 'City', 'name' => 'Wilmington', 'containedInPlace' => [ '@type' => 'State', 'name' => 'Delaware' ] ],
+				],
+				'audience' => [ '@type' => 'BusinessAudience', 'name' => 'Delaware small businesses' ],
+			] );
+
 		case 339: // Philadelphia nonprofits
 			return array_merge( $base, [
 				'@id' => 'https://csuitecode.com/nonprofits-philadelphia/#service',

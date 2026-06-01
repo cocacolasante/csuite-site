@@ -4,55 +4,111 @@
         "type": "post_type",
         "title": "Home",
         "link": "http://csuitecode.com/",
-        "position": 1
-    },
-    {
-        "db_id": 173,
-        "type": "post_type",
-        "title": "AI for Your Business",
-        "link": "http://csuitecode.com/ai/",
-        "position": 2
+        "position": 0,
+        "parent_id": 0
     },
     {
         "db_id": 64,
         "type": "post_type",
         "title": "About",
         "link": "http://csuitecode.com/about/",
-        "position": 3
+        "position": 2,
+        "parent_id": 0
     },
     {
-        "db_id": 199,
-        "type": "post_type",
-        "title": "Cloud Solutions",
-        "link": "http://csuitecode.com/managed-cloud/",
-        "position": 4
-    },
-    {
-        "db_id": 289,
-        "type": "post_type",
-        "title": "Nonprofits",
-        "link": "http://csuitecode.com/nonprofits/",
-        "position": 5
-    },
-    {
-        "db_id": 187,
-        "type": "post_type",
+        "db_id": 359,
+        "type": "custom",
         "title": "Services",
-        "link": "http://csuitecode.com/services/",
-        "position": 6
+        "link": "#",
+        "position": 3,
+        "parent_id": 0
     },
     {
-        "db_id": 66,
+        "db_id": 408,
+        "type": "custom",
+        "title": "Industries",
+        "link": "#",
+        "position": 4,
+        "parent_id": 0
+    },
+    {
+        "db_id": 413,
         "type": "post_type",
-        "title": "Pricing",
-        "link": "http://csuitecode.com/pricing/",
-        "position": 7
+        "title": "Blog",
+        "link": "http://csuitecode.com/blog/",
+        "position": 5,
+        "parent_id": 0
     },
     {
         "db_id": 65,
         "type": "post_type",
         "title": "Contact",
         "link": "http://csuitecode.com/contact/",
-        "position": 8
+        "position": 30,
+        "parent_id": 0
+    },
+    {
+        "db_id": 360,
+        "type": "post_type",
+        "title": "Tech Advisory",
+        "link": "http://csuitecode.com/services/",
+        "position": 4,
+        "parent_id": 359
+    },
+    {
+        "db_id": 361,
+        "type": "post_type",
+        "title": "Managed IT",
+        "link": "http://csuitecode.com/managed-cloud/",
+        "position": 5,
+        "parent_id": 359
+    },
+    {
+        "db_id": 362,
+        "type": "post_type",
+        "title": "AI Automation",
+        "link": "http://csuitecode.com/ai/",
+        "position": 6,
+        "parent_id": 359
+    },
+    {
+        "db_id": 363,
+        "type": "post_type",
+        "title": "Nonprofits",
+        "link": "http://csuitecode.com/nonprofits/",
+        "position": 7,
+        "parent_id": 359
+    },
+    {
+        "db_id": 409,
+        "type": "post_type",
+        "title": "Professional Services",
+        "link": "http://csuitecode.com/it-support-professional-services/",
+        "position": 10,
+        "parent_id": 408
+    },
+    {
+        "db_id": 410,
+        "type": "post_type",
+        "title": "Healthcare Practices",
+        "link": "http://csuitecode.com/it-support-healthcare-practices/",
+        "position": 11,
+        "parent_id": 408
+    },
+    {
+        "db_id": 411,
+        "type": "post_type",
+        "title": "Home Services",
+        "link": "http://csuitecode.com/it-support-home-services/",
+        "position": 12,
+        "parent_id": 408
+    },
+    {
+        "db_id": 412,
+        "type": "post_type",
+        "title": "Real Estate & Construction",
+        "link": "http://csuitecode.com/it-support-real-estate-construction/",
+        "position": 13,
+        "parent_id": 408
     }
 ]
