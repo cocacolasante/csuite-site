@@ -790,6 +790,21 @@ body {
 }
 .csuite-formwrap .fluentform .ff-btn-submit:hover { transform: translateY(-2px); }
 
+/* === Distraction-free landing pages (Google Ads) ===
+   Pages 428 thank-you, 429 generic LP, 430 nonprofit LP: hide header, footer,
+   and sticky bar so the only action is the form. */
+.page-id-428 #masthead, .page-id-428 #colophon, .page-id-428 .csuite-stickybar,
+.page-id-429 #masthead, .page-id-429 #colophon, .page-id-429 .csuite-stickybar,
+.page-id-430 #masthead, .page-id-430 #colophon, .page-id-430 .csuite-stickybar {
+	display: none !important;
+}
+.page-id-428 .site-content, .page-id-428 .content-area,
+.page-id-429 .site-content, .page-id-429 .content-area,
+.page-id-430 .site-content, .page-id-430 .content-area {
+	padding-top: 0 !important; padding-bottom: 0 !important; margin-top: 0 !important; margin-bottom: 0 !important;
+}
+.page-id-428 .entry-content, .page-id-429 .entry-content, .page-id-430 .entry-content { margin: 0 !important; }
+
 /* === Hide leftover legacy/demo stuff if it sneaks back in === */
 .entry-content [class*="placeholder-image"] { display: none; }
 
