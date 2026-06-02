@@ -58,6 +58,19 @@ add_action( 'wp_head', function () {
 	--c-gradient-soft: linear-gradient(135deg, rgba(37, 99, 235, 0.10) 0%, rgba(124, 58, 237, 0.10) 100%);
 	--c-radial: radial-gradient(80% 60% at 50% 0%, rgba(37, 99, 235, 0.28) 0%, rgba(124, 58, 237, 0.18) 30%, transparent 70%);
 
+	/* Kadence-style palette aliases — map legacy --global-palette* tokens used by
+	   newer geo/industry/blog pages onto the canonical design system so every
+	   page renders with identical colors. */
+	--global-palette1: var(--c-accent);
+	--global-palette2: var(--c-accent-2);
+	--global-palette3: var(--c-fg);
+	--global-palette4: var(--c-fg-muted);
+	--global-palette5: var(--c-fg-dim);
+	--global-palette6: var(--c-border-2);
+	--global-palette7: var(--c-border);
+	--global-palette8: var(--c-bg-alt);
+	--global-palette9: var(--c-bg);
+
 	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
 	--radius-sm: 6px;
@@ -643,11 +656,30 @@ body {
 	right: 20px;
 	bottom: 20px;
 	z-index: 9990;
-	display: none;
+	display: flex;
+	gap: 10px;
+	align-items: center;
 }
+.csuite-stickybar .csuite-btn { box-shadow: 0 8px 24px -8px var(--c-accent-glow); }
+.csuite-stickybar .csuite-stickybar__call {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: var(--c-bg);
+	color: var(--c-fg);
+	border: 1px solid var(--c-border-2);
+	border-radius: 999px;
+	padding: 12px 20px;
+	font-weight: 700;
+	font-size: 0.95rem;
+	text-decoration: none;
+	box-shadow: var(--shadow);
+	transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.csuite-stickybar .csuite-stickybar__call:hover { border-color: var(--c-accent); transform: translateY(-2px); }
 @media (max-width: 768px) {
-	.csuite-stickybar { display: block; }
-	.csuite-stickybar .csuite-btn { box-shadow: 0 8px 24px -8px var(--c-accent-glow); }
+	.csuite-stickybar { left: 12px; right: 12px; bottom: 12px; justify-content: center; }
+	.csuite-stickybar .csuite-btn, .csuite-stickybar .csuite-stickybar__call { flex: 1; justify-content: center; text-align: center; }
 }
 
 /* === FAQ override to align with design system === */
@@ -674,6 +706,89 @@ body {
 .csuite-related__card:hover .csuite-related__label { color: var(--c-accent); }
 .csuite-related__desc { color: var(--c-fg-muted); }
 .csuite-related__arrow { color: var(--c-accent); }
+
+/* === Comparison / pricing tables (promoted from per-page inline styles) === */
+.csuite-table-wrap { max-width: 920px; margin: 0 auto; overflow-x: auto; }
+.csuite-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: var(--c-bg);
+	border: 1px solid var(--c-border);
+	border-radius: var(--radius);
+	overflow: hidden;
+	font-size: 0.97rem;
+}
+.csuite-table th, .csuite-table td {
+	padding: 14px 18px;
+	text-align: left;
+	border-bottom: 1px solid var(--c-border);
+}
+.csuite-table thead th {
+	background: var(--c-dark);
+	color: var(--c-dark-text);
+	font-weight: 700;
+	font-size: 0.9rem;
+	letter-spacing: 0.01em;
+}
+.csuite-table tbody tr:last-child td { border-bottom: none; }
+.csuite-table tbody tr:nth-child(even) { background: var(--c-bg-alt); }
+
+/* === Blog post typography (promoted from per-post inline styles) === */
+.csuite-post { max-width: 780px; margin: 0 auto; font-size: 1.06rem; line-height: 1.7; color: var(--c-fg-muted); }
+.csuite-post h2 { font-size: clamp(1.35rem, 2.2vw, 1.7rem); font-weight: 700; color: var(--c-fg); margin: 2em 0 0.6em; letter-spacing: -0.01em; }
+.csuite-post h3 { font-size: 1.15rem; font-weight: 700; color: var(--c-fg); margin: 1.5em 0 0.4em; }
+.csuite-post__byline { color: var(--c-fg-dim); font-size: 0.95rem; margin-bottom: 1.5em; }
+.csuite-post__lede { font-size: 1.2rem; line-height: 1.6; color: var(--c-fg); }
+.csuite-post ol { padding-left: 1.3em; } .csuite-post li { margin: 0.5em 0; }
+.csuite-post__cta { margin: 2.5em 0 1em; }
+
+/* === Lead-capture form (Fluent Forms, styled to design system) === */
+.csuite-formwrap { max-width: 640px; margin: 0 auto; }
+.csuite-form-card {
+	background: var(--c-bg);
+	border: 1px solid var(--c-border);
+	border-radius: var(--radius-lg);
+	padding: 36px;
+	box-shadow: var(--shadow);
+}
+.csuite-formwrap .fluentform .ff-el-input--label label,
+.csuite-formwrap .fluentform label { font-weight: 600; color: var(--c-fg); font-size: 0.92rem; }
+.csuite-formwrap .fluentform input[type=text],
+.csuite-formwrap .fluentform input[type=email],
+.csuite-formwrap .fluentform input[type=tel],
+.csuite-formwrap .fluentform textarea,
+.csuite-formwrap .fluentform select {
+	width: 100%;
+	border: 1px solid var(--c-border-2);
+	border-radius: var(--radius);
+	padding: 12px 14px;
+	font-family: var(--font-sans);
+	font-size: 1rem;
+	color: var(--c-fg);
+	background: var(--c-bg);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.csuite-formwrap .fluentform input:focus,
+.csuite-formwrap .fluentform textarea:focus,
+.csuite-formwrap .fluentform select:focus {
+	outline: none;
+	border-color: var(--c-accent);
+	box-shadow: 0 0 0 3px var(--c-accent-glow);
+}
+.csuite-formwrap .fluentform .ff-btn-submit,
+.csuite-formwrap .fluentform button[type=submit] {
+	background: var(--c-gradient);
+	color: #fff;
+	border: none;
+	border-radius: 999px;
+	padding: 14px 28px;
+	font-weight: 700;
+	font-size: 1rem;
+	cursor: pointer;
+	box-shadow: var(--shadow-accent);
+	transition: transform 0.15s ease;
+}
+.csuite-formwrap .fluentform .ff-btn-submit:hover { transform: translateY(-2px); }
 
 /* === Hide leftover legacy/demo stuff if it sneaks back in === */
 .entry-content [class*="placeholder-image"] { display: none; }
@@ -703,13 +818,14 @@ body {
 }, 100 );
 
 /**
- * Render a global "Book a Call" sticky bar at the bottom of every front-end page
- * (mobile only - desktop uses header CTA).
+ * Render a global sticky CTA bar at the bottom of every front-end page -
+ * call + book-a-call, reachable on desktop and mobile.
  */
 add_action( 'wp_footer', function () {
 	if ( is_admin() ) return;
 	?>
 	<div class="csuite-stickybar">
+		<a class="csuite-stickybar__call" href="tel:+12675664622">&#9742; (267) 566-4622</a>
 		<a class="csuite-btn csuite-btn--primary" href="https://calendar.app.google/jSHYj7c6WtJGykGQ7" target="_blank" rel="noopener">Book a call</a>
 	</div>
 	<?php

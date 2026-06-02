@@ -252,6 +252,20 @@ function csuite_faqs_for_page( $post_id ) {
 			 'a' => 'At least annually, and after any major change - new staff, new software, a new location, or an incident. Both your business and the threat landscape change, so a control set that was solid last year may have gaps now.' ],
 		],
 
+		// IT support for nonprofits (426)
+		426 => [
+			[ 'q' => 'Do you offer discounted IT support for nonprofits?',
+			 'a' => 'Yes. Verified 501(c)(3) organizations receive discounted hourly and project rates, and organizations with annual budgets under $500,000 qualify for our deepest tier. We also help you claim TechSoup and nonprofit software discounts.' ],
+			[ 'q' => 'What does one point of contact mean for a nonprofit?',
+			 'a' => 'Instead of your staff chasing the CRM vendor, the email host, and whoever built the website, you call us for everything. We manage those vendors on your behalf and own every issue end to end, so your lean team stays on the mission.' ],
+			[ 'q' => 'Which nonprofit systems do you support?',
+			 'a' => 'Donor CRMs (Bloomerang, Little Green Light, Salesforce NPSP), grants tools, Google for Nonprofits and Microsoft 365, plus day-to-day helpdesk, security, and backups across all staff devices. Every client also gets GrantMind Pro included.' ],
+			[ 'q' => 'Is GrantMind Pro really included?',
+			 'a' => 'Yes. GrantMind Pro, our AI grant research and proposal-writing platform (normally $249/month), is included at no extra cost while you are an active CSuite Code nonprofit client.' ],
+			[ 'q' => 'Do you work with nonprofits in person?',
+			 'a' => 'We are based in the Greater Philadelphia area and serve nonprofits across Philadelphia, South Jersey, and Delaware on-site, plus the wider PA/NJ/DE region remotely. Most day-to-day support is remote for speed.' ],
+		],
+
 		// IT support for professional services (401)
 		401 => [
 			[ 'q' => 'Do you provide HIPAA or SOC 2 compliant IT for professional firms?',
@@ -479,6 +493,17 @@ function csuite_related_links_for_page( $post_id ) {
 				[ 'url' => '/managed-it-services-cost-philadelphia-tri-state/', 'label' => 'What managed IT costs in 2026', 'desc' => 'Tri-state pricing guide with real ranges.' ],
 				[ 'url' => '/it-support-professional-services/', 'label' => 'IT for professional firms', 'desc' => 'Compliance-aware security for law and accounting.' ],
 				[ 'url' => '/managed-cloud/', 'label' => 'Managed IT services', 'desc' => 'Get these 15 controls handled for you.' ],
+			],
+		],
+
+		// IT support for nonprofits (426)
+		426 => [
+			'heading' => 'Explore nonprofit services',
+			'links' => [
+				[ 'url' => '/nonprofits/', 'label' => 'Nonprofit program overview', 'desc' => 'Discounted rates, GrantMind Pro, and how we work with 501(c)(3) orgs.' ],
+				[ 'url' => '/nonprofit-it-support/', 'label' => 'Nonprofit IT support', 'desc' => 'Day-to-day helpdesk, security, patching, and monitoring.' ],
+				[ 'url' => '/nonprofit-managed-services/', 'label' => 'Nonprofit managed services', 'desc' => 'One MSP for IT, web, security, and AI - nonprofit pricing.' ],
+				[ 'url' => '/services/', 'label' => 'Vendor-neutral tech advisory', 'desc' => 'CTO-level guidance above day-to-day IT.' ],
 			],
 		],
 
@@ -967,6 +992,16 @@ function csuite_service_for_page( $post_id ) {
 	];
 
 	switch ( (int) $post_id ) {
+		case 426: // IT support for nonprofits (industry overview)
+			return array_merge( $base, [
+				'@id' => 'https://csuitecode.com/it-support-nonprofits/#service',
+				'name' => 'IT Support for Nonprofits & 501(c)(3) Organizations',
+				'serviceType' => 'Managed IT Services for Nonprofit Organizations',
+				'description' => 'One technology partner for nonprofits - helpdesk, security, donor and grant systems, and vendor management - at discounted 501(c)(3) rates. Complimentary GrantMind Pro access. Serving Philadelphia, South Jersey, and Delaware.',
+				'url' => 'https://csuitecode.com/it-support-nonprofits/',
+				'audience' => [ '@type' => 'Audience', 'audienceType' => 'Nonprofit organizations (501(c)(3))' ],
+			] );
+
 		case 401: // IT support for professional services
 			return array_merge( $base, [
 				'@id' => 'https://csuitecode.com/it-support-professional-services/#service',
